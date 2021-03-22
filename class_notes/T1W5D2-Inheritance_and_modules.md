@@ -69,6 +69,72 @@ p child_variable
 
 # Modules and Mixins
 
-Modules are collection of code that does not makes sense to have in a class. Modules will often have either methods or classes within it.
+Modules are collection of code. Modules will often have either methods or classes within it.
 Modules can also be used as a mixin where we want to include the modules in our classes.
 
+## Declaring a module
+
+I recommend that you keep all your modules in a separate file.
+
+```ruby
+module ModuleName
+end
+```
+
+## Adding variables, methods and classes
+
+```ruby
+module ModuleName
+  CONTSTANT_VARIABLE = 'Constant'
+  class TestClass
+  attr_accessor :param1
+    def initialize(param1)
+      @param1 = param1
+    end
+  end
+
+  def module_method
+  end
+
+  def self.module_method2
+  end
+end
+```
+
+## Using the module
+
+```ruby
+ModuleName::CONSTANT_VARIABLE
+ModuleName.module_method2
+test_var = ModuleName::TestClass.new
+test_var.param1
+
+```
+
+## Mixin
+
+Another use of modules is to use them as mixin.
+As ruby does not support multiple inheritance we need another way to gain functionality from different sources. This is where modules and mixins come handy.
+
+### Example module
+
+```ruby
+module ModuleExample
+  def print_class
+    puts self.class
+  end
+end
+```
+### Including the module into our class
+
+```ruby
+class ClassExample
+  include ModuleExample
+end
+```
+### Using the included module
+
+```ruby
+new_class = ClassExample.new
+new_class.print_class
+```
