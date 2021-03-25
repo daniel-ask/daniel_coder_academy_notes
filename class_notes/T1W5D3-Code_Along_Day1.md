@@ -20,5 +20,17 @@
 
 ## Optionally create a Github repo
 
-## create game first
+## Create game first
 
+## Further functionality
+
+- Gems - Faker
+- Script
+- Arguments
+
+### Gems
+
+### Script
+
+### Arguments
+  
