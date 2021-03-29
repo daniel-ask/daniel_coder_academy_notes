@@ -1,4 +1,4 @@
-# Terminal App - Code Along
+ear Terminal App - Code Along
 
 ## Initial Setup
 
