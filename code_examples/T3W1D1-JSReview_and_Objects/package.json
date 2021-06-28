@@ -1,0 +1,11 @@
+{
+  "name": "objectTerminalDemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Daniel Ask",
+  "license": "MIT",
+  "dependencies": {
+    "prompt": "^1.1.0",
+    "readline-sync": "^1.4.10"
+  }
+}
