@@ -25,4 +25,6 @@ If this is confusing just make sure to use `./data/data.json` as your file path.
 
 Probably the most basic format you might want to store your data is by using a text file this is ok but generally you want to use a file type that actually lets you retain some kind of format of your data. The some great file formats to use is json, csv and yaml. I will run through how I would use json to create persistent storage here but feel to give csv or yaml a go on your own.
 
-## 
+## JSON read
+
+So ruby comes with a json library to handle json formats and convert basic structure and data types to json as well. Let
