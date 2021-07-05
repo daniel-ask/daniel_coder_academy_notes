@@ -32,8 +32,8 @@ function App() {
           <Timer minInput={min} secInput={sec} />
         ) : (
           <form onSubmit={startTimer}>
-            <input type="number" value={min} onChange={(e) => changeMin(e)} step={1} min={0} className="time" />
-            <input type="number" name="seconds" id="second-input" value={sec} onChange={(e) => changeSec(e)} step={1} min={0} className="time" />
+            <input type="number" value={min} onChange={(e) => changeMin(e)} min={0} className="time" />
+            <input type="number" name="seconds" id="second-input" value={sec} onChange={(e) => changeSec(e)} min={0} className="time" />
             <input type="submit" value="Start" />
           </form>
         )}
