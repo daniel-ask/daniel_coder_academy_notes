@@ -61,3 +61,10 @@ bundle exec rake secret
 
 
 ```
+
+
+Create a file .env.development
+
+```
+PORT=8080
+```
