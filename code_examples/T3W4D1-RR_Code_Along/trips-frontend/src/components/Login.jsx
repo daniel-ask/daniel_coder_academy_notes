@@ -10,7 +10,7 @@ export default function Login() {
     password: "",
   });
 
-	const [username, setUsername] = useContext(AuthenticationContext)
+	const [username, setUsername, profilePic, setProfilePic] = useContext(AuthenticationContext)
 	
   const [remember, setRemember] = useState(false);
 	
@@ -52,6 +52,7 @@ export default function Login() {
 			sessionStorage.setItem('token', data.token)
 		}
 		setUsername(data.user.username)
+    setProfilePic(data.profile_pic)
   };
 
   const login = (e) => {
